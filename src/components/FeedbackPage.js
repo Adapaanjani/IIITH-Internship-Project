@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { TextField, Button, FormControl, InputLabel, Select, MenuItem, Checkbox, FormControlLabel, Radio, RadioGroup, FormLabel, Grid } from '@mui/material';
-import Navbar from './Navbar';
+
 import Footer from './Footer';
+import { useNavigate } from 'react-router-dom';
 import './FeedbackPage.css'
 const FeedbackForm = () => {
 
@@ -48,9 +49,15 @@ const FeedbackForm = () => {
         window.location.reload();
     };
 
+    const navigate = useNavigate();
+
+    const handleBack = () => {
+        navigate('/page1'); // Navigate to the home page when the "Back" button is clicked
+    };
+
     return (
         <div>
-            <Navbar/>
+           
         <form onSubmit={handleSubmit} className='form'>
             <div className='Heading'><h1>𝕃𝕖𝕒𝕧𝕖 𝔸 𝕋𝕙𝕠𝕦𝕘𝕙𝕥</h1></div>
                    
@@ -100,7 +107,7 @@ const FeedbackForm = () => {
                 </Grid>
 
                 <Grid item xs={6}>
-                    <TextField label="Date" type="date" value={selectedDate} onChange={handleDateChange} fullWidth />
+                    <TextField label="Date" type="paragraph" value={selectedDate} onChange={handleDateChange} fullWidth />
                 </Grid>
                 <Grid item xs={6}>
                     <FormControl fullWidth>
@@ -136,6 +143,9 @@ const FeedbackForm = () => {
                     <Button type="submit" variant="contained" color="primary">
                         Submit
                     </Button>
+                    <Button variant="contained" color="secondary" onClick={handleBack}>
+                            Back
+                        </Button>
                 </Grid>
             </Grid>
         
