@@ -31,7 +31,7 @@ const BlackHolePage = () => {
     <div>
     <Navbar/>
     <div className="black-hole-page">
-      <h1>Black Holes</h1>
+      <h1>𝔹𝕝𝕒𝕔𝕜ℍ𝕠𝕝𝕖𝕤</h1>
       <div className="black-hole-cards">
         {blackHoleHistory.map((item, index) => (
           <div className="black-hole-card" key={index}>
