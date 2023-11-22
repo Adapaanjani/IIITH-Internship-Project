@@ -1,0 +1,28 @@
+/* FeedbackForm.css */
+
+.form {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.form:hover {
+   /* Change background color on hover */
+  transform: translateY(-5px); /* Move the form up slightly on hover */
+}
+
+.Heading {
+  text-align: center;
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 600px) {
+  .form {
+    width: 90%;
+  }
+}

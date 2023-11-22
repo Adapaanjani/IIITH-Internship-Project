@@ -1,0 +1,99 @@
+/* table.css */
+
+.table.titles {
+   text-align: center;
+ 
+}
+
+.table-container {
+  overflow-x: auto;
+  text-align: center;
+}
+
+.space-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 2px solid #3498db; /* Default outline color for the table */
+}
+
+.space-table th,
+.space-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.space-table th {
+  background-color: #3498db; /* Default header background color */
+  color: white; /* Default header text color */
+  text-align: center; /* Center the text in header cells */
+}
+
+.space-table tr:hover {
+  background-color: #f5f5f5; /* Default hover background color */
+}
+
+/* Individual styles for each table */
+.space-table.planet {
+  border-color: #e74c3c;  /* Outline color for the planet table */
+  /* Header background color for the planet table */
+}
+
+.space-table.planet th {
+  background-color: #e74c3c;  /* Header background color for the planet table */
+}
+
+.space-table.planet tr:hover {
+  background-color: #e77b6f;  /* Hover background color for the planet table */
+}
+
+/* Add similar styles for the rocket, satellite, and asteroid tables */
+.space-table.rocket {
+  border-color:#16a085;
+  
+}
+
+.space-table.rocket th {
+  background-color: #16a085; /* Header background color for the planet table */
+}
+.space-table.rocket tr:hover {
+  background-color: #7ce9d3; /* Hover background color for the planet table */
+}
+
+
+.space-table.satellite {
+  border-color: #3498db;
+ 
+}
+.space-table.satellite th {
+  background-color: #3498db; /* Header background color for the planet table */
+}
+.space-table.satellite tr:hover {
+  background-color: #6dbaed; /* Hover background color for the planet table */
+}
+
+
+.space-table.asteroid {
+  border-color: #9b59b6;
+}
+.space-table.asteroid th {
+  background-color: #9b59b6; /* Header background color for the planet table */
+}
+.space-table.asteroid tr:hover {
+  background-color: #d88cf7; /* Hover background color for the planet table */
+}
+
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .space-table {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .space-table {
+    font-size: 10px;
+  }
+}

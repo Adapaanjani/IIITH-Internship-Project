@@ -1,0 +1,16 @@
+/* CardComponent.css */
+
+.know-more-button {
+    background-color: #3498db; /* Set your desired background color */
+    color: #ffffff; /* Set your desired text color */
+    padding: 10px 15px; /* Set padding as needed */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .know-more-button:hover {
+    background-color: rgb(185, 41, 154); /* Change the background color on hover */
+  }
+  

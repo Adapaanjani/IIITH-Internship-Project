@@ -1,0 +1,71 @@
+
+.pie-chart-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.pie-chart {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.pie-chart:hover {
+  transform: scale(1.05);
+}
+
+.pie-chart h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* PieChart styling */
+.recharts-wrapper {
+  display: inline-block;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Legends and Tooltip styling */
+.recharts-legend-wrapper,
+.recharts-tooltip-wrapper {
+  margin-top: 10px;
+}
+
+.recharts-legend-item-text,
+.recharts-tooltip-label {
+  font-size: 14px;
+  color: #555;
+}
+
+.recharts-legend-item {
+  cursor: pointer;
+}
+
+/* Media queries for tablet view */
+@media only screen and (max-width: 768px) {
+  .pie-chart-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .pie-chart {
+      width: 80%;
+  }
+}
+
+/* Media queries for mobile view */
+@media only screen and (max-width: 480px) {
+  .pie-chart {
+      width: 100%;
+  }
+}

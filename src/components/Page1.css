@@ -1,0 +1,101 @@
+/* Page1.css */
+
+.page1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.welcome-message {
+  max-width: 400px;
+}
+
+.image-slider {
+  width: 100%;
+  max-width: 400px;
+}
+
+.image-slider-card {
+  border: 2px solid #151414;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.image-slider-card:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); /* Adjust the box-shadow values for the desired hover effect */
+}
+
+.image-slider-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around; /* or use 'space-between' for spacing at the ends */
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.card {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.card img {
+  width: 100%; /* Make the image fill the container */
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Adjust the scale factor for the desired zoom effect on hover */
+}
+
+@media screen and (max-width: 1200px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .image-slider-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .page1 {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%; /* Full width */
+    margin-bottom: 10px; /* Add margin between cards */
+  }
+  .image-slider-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}

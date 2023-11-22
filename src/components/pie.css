@@ -1,0 +1,30 @@
+/* Add these styles to your CSS file */
+
+.pie-charts-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pie-chart {
+  text-align: center;
+  margin: 20px;
+  width: 100%; /* Set the initial width for mobile view */
+}
+
+/* Media queries for tablet and desktop view */
+@media only screen and (min-width: 481px) {
+  .pie-chart {
+    width: 45%; /* Adjust the width as needed for tablet and desktop view */
+  }
+}
+
+/* Media queries for mobile view */
+@media only screen and (max-width: 480px) {
+  .pie-chart {
+    width: 100%;
+  }
+}

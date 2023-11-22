@@ -1,0 +1,51 @@
+/* BlackHolePage.css */
+
+.black-hole-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .black-hole-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+  .black-hole-card {
+    border: 1px solid #ddd;
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 8px;
+  }
+  
+  .black-hole-card:hover {
+    transform: translateY(-5px); /* Move the card up slightly on hover */
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-image {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .card-image img {
+    width: 100%; /* Make the image fill the container */
+  height: 100%; /* Ensure the image maintains its aspect ratio */
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  border-radius: 8px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .black-hole-card {
+      width: 80%;
+    }
+  }
+  

@@ -1,0 +1,44 @@
+/* PlanetsPage.css */
+
+.planets-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.planet-info {
+  display: flex;
+  flex-direction: column;
+  width: 300px; /* Adjust as needed */
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.planet-info:hover {
+  transform: translateY(-10px); /* Adjust the value for the desired lift effect */
+}
+
+.text-content {
+  flex: 1;
+}
+
+.planet-image {
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.planet-image img {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Ensure the image maintains its aspect ratio */
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  border-radius: 8px; /* Add border-radius for rounded corners */
+}
+
+@media (max-width: 768px) {
+  .planet-info {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
